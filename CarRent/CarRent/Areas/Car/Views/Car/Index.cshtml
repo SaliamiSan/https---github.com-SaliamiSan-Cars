@@ -23,7 +23,12 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.CarName)
+            @*@if (item.Status == Infrastruction.CarStatus.Free)
+            { 
+                @:You can rent this car: 
+            }
+            @Html.DisplayFor(modelItem => item.CarName)<br/>*@
+            @Html.Partial("CarStatus", item)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Status)
@@ -35,5 +40,7 @@
         </td>
     </tr>
 }
+
+    
 
 </table>
