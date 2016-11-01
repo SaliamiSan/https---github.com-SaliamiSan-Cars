@@ -1,0 +1,7 @@
+﻿@model IEnumerable<Infrastruction.DomainObjects.Component>
+
+@foreach (var option in Model)
+{
+    @Html.LabelFor(m => option.ComponentName)
+    @Html.CheckBoxFor(m => option.IsComponentAllowed)
+}

@@ -137,7 +137,10 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Car\Models\" />
+    <Folder Include="Areas\Car\Views\Component\" />
     <Folder Include="Areas\Car\Views\Temp\" />
+    <Folder Include="Areas\Component\Models\" />
+    <Folder Include="Areas\Component\Views\Shared\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
@@ -150,6 +153,8 @@
     <Compile Include="Areas\Car\CarAreaRegistration.cs" />
     <Compile Include="Areas\Car\Controllers\CarController.cs" />
     <Compile Include="Areas\Car\TempController.cs" />
+    <Compile Include="Areas\Component\ComponentAreaRegistration.cs" />
+    <Compile Include="Areas\Component\Controllers\ComponentController.cs" />
     <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
     <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
     <Compile Include="Areas\HelpPage\Controllers\HelpController.cs" />
@@ -200,6 +205,9 @@
     <Content Include="Areas\Car\Views\Car\Edit.cshtml" />
     <Content Include="Areas\Car\Views\Car\Index.cshtml" />
     <Content Include="Areas\Car\Views\Shared\CarStatus.cshtml" />
+    <Content Include="Areas\Component\Views\web.config" />
+    <Content Include="Areas\Component\Views\Component\Edit.cshtml" />
+    <Content Include="Areas\Component\Views\Component\Index.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -224,6 +232,7 @@
     <Content Include="Views\Shared\EditorTemplates\Enum.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\DisplayTemplates\Enum.cshtml" />
+    <Content Include="Views\Shared\EditorTemplates\ComponentList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CarDataContext\CarRentContext.csproj">

@@ -17,4 +17,13 @@ namespace Infrastruction.DomainObjects
         [System.ComponentModel.DataAnnotations.EnumDataType(typeof(CarStatus))]
         public CarStatus Status { get; set; }
     }
+
+    public class Component
+    {
+        public int ComponentId { get; set; }
+
+        public string ComponentName { get; set; }
+
+        public bool IsComponentAllowed { get; set; }
+    }
 }
