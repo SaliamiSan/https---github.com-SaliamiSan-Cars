@@ -52,7 +52,6 @@ namespace CarRent.Areas.Car.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "CarId,CarName,Status")] Infrastruction.DomainObjects.Car car)
         {
             if (ModelState.IsValid)
@@ -63,6 +62,11 @@ namespace CarRent.Areas.Car.Controllers
             }
 
             return View(car);
+        }
+
+        public string CheckCar(int? carId)
+        {
+            return Newtonsoft.Json.JsonConvert.SerializeObject(new { Status = HttpStatusCode.OK});
         }
 
         // GET: /Car/Car/Edit/5
