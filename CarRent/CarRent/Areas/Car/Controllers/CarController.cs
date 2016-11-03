@@ -30,16 +30,7 @@ namespace CarRent.Areas.Car.Controllers
         // GET: /Car/Car/Details/5
         public ActionResult Details(int? id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Infrastruction.DomainObjects.Car car = db.Cars.Find(id);
-            if (car == null)
-            {
-                return HttpNotFound();
-            }
-            return View(car);
+            return View(_service.GetAllCars((x) => true).FirstOrDefault());
         }
 
         // GET: /Car/Car/Create

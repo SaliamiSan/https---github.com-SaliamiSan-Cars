@@ -18,7 +18,7 @@
         @Html.HiddenFor(model => model.CarId)
 
         <div class="form-group">
-            @Html.LabelFor(model => model.CarName, new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.CarName, new { @class = "control-label col-md-2 edit" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.CarName)
                 @Html.ValidationMessageFor(model => model.CarName)
@@ -48,3 +48,6 @@
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
 }
+
+
+
