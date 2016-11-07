@@ -1,5 +1,4 @@
 ﻿@model IEnumerable<Infrastruction.DomainObjects.Car>
-
 @{
     ViewBag.Title = "Index";
 }
@@ -21,44 +20,21 @@
     @Html.ActionLink("Create New", "Create") <br/>
     @Html.ActionLink("Print version", "Index", new {id="print" }) <br />
 </p>
-<table class="table">
-    <tr>
-        <th>
-            Check
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CarName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Status)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            <input type="checkbox" onclick="SendCheckedCar(@item.CarId)" />
-        </td>
-        <td>
-            @*@if (item.Status == Infrastruction.CarStatus.Free)
-            { 
-                @:You can rent this car: 
-            }
-            @Html.DisplayFor(modelItem => item.CarName)<br/>*@
-            @Html.Partial("CarStatus", item)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Status)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.CarId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.CarId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.CarId })
-        </td>
-    </tr>
+@using (Ajax.BeginForm("FindCars", new AjaxOptions
+{
+    InsertionMode = InsertionMode.Replace,
+    UpdateTargetId = "update",
+    LoadingElementId = "loader"
+}))
+{
+    @Html.TextBox("carType")
+    <input type="submit" value="Search" />
 }
 
-    
-
-</table>
+@* ... *@
+<div id="loader" class=" aletr" style="display:none">
+    Loading...
+</div>
+<div id="update">
+ @Html.Partial("ListCarView", Model)   
+</div>

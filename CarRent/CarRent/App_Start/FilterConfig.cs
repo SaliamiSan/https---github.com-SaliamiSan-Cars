@@ -9,6 +9,7 @@ namespace CarRent
         {
             filters.Add(new HandleErrorAttribute());
             filters.Add(new PrintFilter());
+            filters.Add(new AjaxPartialFilter());
         }
     }
 
@@ -34,5 +35,26 @@ namespace CarRent
             }
         }
        
+    }
+
+    public class AjaxPartialFilter : ActionFilterAttribute
+    {
+        public override void OnActionExecuted(ActionExecutedContext filterContext)
+        {
+            
+            if (filterContext.RequestContext.HttpContext.Request.IsAjaxRequest())
+            {
+                var oldView = filterContext.Result as ViewResult;
+                if (oldView != null)
+                {
+                    filterContext.Result = new PartialViewResult
+                    {
+                        ViewData = oldView.ViewData,
+                        ViewName = oldView.ViewName
+                    };
+                }
+            }
+        }
+
     }
 }

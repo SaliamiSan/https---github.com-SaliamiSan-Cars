@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
+using System.Runtime.Remoting.Messaging;
 using System.Web;
 using System.Web.Mvc;
 using Infrastruction;
@@ -25,6 +26,24 @@ namespace CarRent.Areas.Car.Controllers
         public ActionResult Index()
         {
             return View(_service.GetAllCars((x)=>true));
+        }
+
+        public ActionResult FindCars(string carType)
+        {
+            Func<Infrastruction.DomainObjects.Car, bool> selector = car => true;
+            if (!string.IsNullOrWhiteSpace(carType))
+            {
+                selector = (x) => x.CarName.ToUpper() == carType.ToUpper();
+            }
+            if (Request.IsAjaxRequest())
+            {
+                return PartialView("ListCarView", _service.GetAllCars(selector));
+            }
+            else
+            {
+                return View("Index", _service.GetAllCars(selector));
+            }
+
         }
 
         // GET: /Car/Car/Details/5

@@ -1,11 +1,11 @@
 ﻿@model Infrastruction.DomainObjects.Car
+@{
+    Layout = null;
+}
 @if (Model.Status == Infrastruction.CarStatus.Free)
 {
     @:You can rent this car:
 }
-@Html.Action("Details", "Car",
-new {area="Car", 
-    id = Model.CarId })
 @*<span class="@Model.Status">@Model.CarName</span>*@
 
 @Html.ActionLink(Model.CarName, "Details", 

@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Infrastruction.DomainObjects.Car>
+@{
+    Layout = null;
+}
+<table class="table">
+    <tr>
+        <th>
+            Check
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CarName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th></th>
+    </tr>
+@foreach (var item in Model)
+{
+    <tr>
+        <td>
+            <input type="checkbox" onclick="SendCheckedCar(@item.CarId) " />
+        </td>
+        <td>
+            @Html.Partial("CarStatus", item)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Status)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.CarId }) |
+            @Html.ActionLink("Details", "Details", new { id = item.CarId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.CarId })
+        </td>
+    </tr>
+}
+</table>           
+
