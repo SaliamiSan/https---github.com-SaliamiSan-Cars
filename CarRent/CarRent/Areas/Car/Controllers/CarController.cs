@@ -30,16 +30,7 @@ namespace CarRent.Areas.Car.Controllers
         // GET: /Car/Car/Details/5
         public ActionResult Details(int? id)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Infrastruction.DomainObjects.Car car = db.Cars.Find(id);
-            if (car == null)
-            {
-                return HttpNotFound();
-            }
-            return View(car);
+            return View(_service.GetAllCars((x) => true).FirstOrDefault());
         }
 
         // GET: /Car/Car/Create
@@ -52,7 +43,6 @@ namespace CarRent.Areas.Car.Controllers
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
-        [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "CarId,CarName,Status")] Infrastruction.DomainObjects.Car car)
         {
             if (ModelState.IsValid)
@@ -63,6 +53,11 @@ namespace CarRent.Areas.Car.Controllers
             }
 
             return View(car);
+        }
+
+        public string CheckCar(int? carId)
+        {
+            return Newtonsoft.Json.JsonConvert.SerializeObject(new { Status = HttpStatusCode.OK});
         }
 
         // GET: /Car/Car/Edit/5

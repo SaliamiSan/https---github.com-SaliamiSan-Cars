@@ -15,9 +15,14 @@ namespace CarRent.Areas.Car
         public override void RegisterArea(AreaRegistrationContext context) 
         {
             context.MapRoute(
+                "Car_print",
+                "Print/{controller}/Index/{id}",
+                new { action = "Index", id = UrlParameter.Optional }
+            );
+            context.MapRoute(
                 "Car_default",
                 "Car/{controller}/{action}/{id}",
-                new { action = "Index", id = UrlParameter.Optional }
+                new { action = "Index", id = UrlParameter.Optional}
             );
         }
     }

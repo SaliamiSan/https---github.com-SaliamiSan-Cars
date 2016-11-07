@@ -5,12 +5,27 @@
 }
 
 <h2>Index</h2>
+<script>
+    function SendCheckedCar(carId) {
+        $.ajax({
+            url: "@Url.Action("CheckCar")",
+            method: "POST",
+            data:carId
+        }).done(function () {
+            $(this).addClass("done");
+        });
+    }
+</script>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New", "Create") <br/>
+    @Html.ActionLink("Print version", "Index", new {id="print" }) <br />
 </p>
 <table class="table">
     <tr>
+        <th>
+            Check
+        </th>
         <th>
             @Html.DisplayNameFor(model => model.CarName)
         </th>
@@ -23,7 +38,15 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.CarName)
+            <input type="checkbox" onclick="SendCheckedCar(@item.CarId)" />
+        </td>
+        <td>
+            @*@if (item.Status == Infrastruction.CarStatus.Free)
+            { 
+                @:You can rent this car: 
+            }
+            @Html.DisplayFor(modelItem => item.CarName)<br/>*@
+            @Html.Partial("CarStatus", item)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Status)
@@ -35,5 +58,7 @@
         </td>
     </tr>
 }
+
+    
 
 </table>

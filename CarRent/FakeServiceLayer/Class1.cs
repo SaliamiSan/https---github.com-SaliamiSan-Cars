@@ -17,6 +17,8 @@ namespace FakeServiceLayer
 
         public IEnumerable<Infrastruction.DomainObjects.Car> GetAllCars(Func<Infrastruction.DomainObjects.Car, bool> selector)
         {
+            return new List<Car>() { new Car() { CarName = "Porshe" }, new Car() { CarName = "BMW" } };
+
             return Enumerable.Empty<Car>();
         }
     }

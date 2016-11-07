@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Infrastruction.DomainObjects.Component>
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ComponentName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsComponentAllowed)
+        </th>
+        <th></th>
+    </tr>
+@using (Html.BeginForm()) { 
+@Html.EditorFor(m => Model, "ComponentList")
+}
+</table>

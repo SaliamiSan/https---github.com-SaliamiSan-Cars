@@ -15,7 +15,8 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.CarName)
+            
+            @Html.Label(Model.CarName, new {@class = "edit"})
         </dd>
 
         <dt>
@@ -32,3 +33,24 @@
     @Html.ActionLink("Edit", "Edit", new { id = Model.CarId }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+@section Scripts {
+<script src="http://www.appelsiini.net/download/jquery.jeditable.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.edit').editable(function (value, settings) {
+            $.ajax({
+                url: '@Url.Action("Update")',
+                data: document.body
+            });
+            console.log(this);
+            console.log(value);
+            console.log(settings);
+            return (value);
+        }, {
+            type: 'textarea',
+            submit: 'OK',
+        });
+    });
+</script>
+}
+
