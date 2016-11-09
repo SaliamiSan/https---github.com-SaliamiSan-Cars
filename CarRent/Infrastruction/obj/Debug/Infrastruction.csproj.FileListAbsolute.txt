@@ -3,3 +3,8 @@ C:\Users\User\Documents\GitHub\https---github.com-SaliamiSan-Cars.git\CarRent\In
 C:\Users\User\Documents\GitHub\https---github.com-SaliamiSan-Cars.git\CarRent\Infrastruction\obj\Debug\Infrastruction.csprojResolveAssemblyReference.cache
 C:\Users\User\Documents\GitHub\https---github.com-SaliamiSan-Cars.git\CarRent\Infrastruction\obj\Debug\Infrastruction.dll
 C:\Users\User\Documents\GitHub\https---github.com-SaliamiSan-Cars.git\CarRent\Infrastruction\obj\Debug\Infrastruction.pdb
+C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\Infrastruction\bin\Debug\Infrastruction.dll
+C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\Infrastruction\bin\Debug\Infrastruction.pdb
+C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\Infrastruction\obj\Debug\Infrastruction.csprojResolveAssemblyReference.cache
+C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\Infrastruction\obj\Debug\Infrastruction.dll
+C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\Infrastruction\obj\Debug\Infrastruction.pdb

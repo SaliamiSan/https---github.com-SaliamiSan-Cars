@@ -5,3 +5,10 @@ C:\Users\User\Documents\GitHub\https---github.com-SaliamiSan-Cars.git\CarRent\Fa
 C:\Users\User\Documents\GitHub\https---github.com-SaliamiSan-Cars.git\CarRent\FakeServiceLayer\obj\Debug\FakeServiceLayer.csprojResolveAssemblyReference.cache
 C:\Users\User\Documents\GitHub\https---github.com-SaliamiSan-Cars.git\CarRent\FakeServiceLayer\obj\Debug\FakeServiceLayer.dll
 C:\Users\User\Documents\GitHub\https---github.com-SaliamiSan-Cars.git\CarRent\FakeServiceLayer\obj\Debug\FakeServiceLayer.pdb
+C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\FakeServiceLayer\bin\Debug\FakeServiceLayer.dll
+C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\FakeServiceLayer\bin\Debug\FakeServiceLayer.pdb
+C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\FakeServiceLayer\bin\Debug\Infrastruction.dll
+C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\FakeServiceLayer\bin\Debug\Infrastruction.pdb
+C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\FakeServiceLayer\obj\Debug\FakeServiceLayer.csprojResolveAssemblyReference.cache
+C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\FakeServiceLayer\obj\Debug\FakeServiceLayer.dll
+C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\FakeServiceLayer\obj\Debug\FakeServiceLayer.pdb

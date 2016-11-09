@@ -10,3 +10,15 @@ C:\Users\User\Documents\GitHub\https---github.com-SaliamiSan-Cars.git\CarRent\Ca
 C:\Users\User\Documents\GitHub\https---github.com-SaliamiSan-Cars.git\CarRent\CarDataContext\obj\Debug\CarRentContext.csprojResolveAssemblyReference.cache
 C:\Users\User\Documents\GitHub\https---github.com-SaliamiSan-Cars.git\CarRent\CarDataContext\obj\Debug\CarRentContext.dll
 C:\Users\User\Documents\GitHub\https---github.com-SaliamiSan-Cars.git\CarRent\CarDataContext\obj\Debug\CarRentContext.pdb
+C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\CarDataContext\bin\Debug\CarRentContext.dll.config
+C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\CarDataContext\bin\Debug\CarRentContext.dll
+C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\CarDataContext\bin\Debug\CarRentContext.pdb
+C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\CarDataContext\bin\Debug\EntityFramework.dll
+C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\CarDataContext\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\CarDataContext\bin\Debug\Infrastruction.dll
+C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\CarDataContext\bin\Debug\Infrastruction.pdb
+C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\CarDataContext\bin\Debug\EntityFramework.xml
+C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\CarDataContext\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\CarDataContext\obj\Debug\CarRentContext.csprojResolveAssemblyReference.cache
+C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\CarDataContext\obj\Debug\CarRentContext.dll
+C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\CarDataContext\obj\Debug\CarRentContext.pdb
