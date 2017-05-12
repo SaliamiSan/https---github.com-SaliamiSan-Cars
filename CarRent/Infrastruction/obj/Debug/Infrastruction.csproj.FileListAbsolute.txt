@@ -8,3 +8,8 @@ C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\
 C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\Infrastruction\obj\Debug\Infrastruction.csprojResolveAssemblyReference.cache
 C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\Infrastruction\obj\Debug\Infrastruction.dll
 C:\Users\Stsiapan_Karol\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\Infrastruction\obj\Debug\Infrastruction.pdb
+C:\Users\User\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\Infrastruction\bin\Debug\Infrastruction.dll
+C:\Users\User\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\Infrastruction\bin\Debug\Infrastruction.pdb
+C:\Users\User\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\Infrastruction\obj\Debug\Infrastruction.csprojResolveAssemblyReference.cache
+C:\Users\User\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\Infrastruction\obj\Debug\Infrastruction.dll
+C:\Users\User\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\Infrastruction\obj\Debug\Infrastruction.pdb

@@ -29,3 +29,6 @@ C:\Users\User\Documents\GitHub\https---github.com-SaliamiSan-Cars.git\CarRent\Ca
 C:\Users\User\Documents\GitHub\https---github.com-SaliamiSan-Cars.git\CarRent\CarRent.Tests\obj\Debug\CarRent.Tests.csprojResolveAssemblyReference.cache
 C:\Users\User\Documents\GitHub\https---github.com-SaliamiSan-Cars.git\CarRent\CarRent.Tests\obj\Debug\CarRent.Tests.dll
 C:\Users\User\Documents\GitHub\https---github.com-SaliamiSan-Cars.git\CarRent\CarRent.Tests\obj\Debug\CarRent.Tests.pdb
+C:\Users\User\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\CarRent.Tests\obj\Debug\CarRent.Tests.csprojResolveAssemblyReference.cache
+C:\Users\User\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\CarRent.Tests\obj\Debug\CarRent.Tests.dll
+C:\Users\User\Source\Repos\https---github.com-SaliamiSan-Cars\CarRent\CarRent.Tests\obj\Debug\CarRent.Tests.pdb
